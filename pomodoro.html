@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Study Timer</title>
+<link rel="styleSheet" href="pomodoro.css">
+</head>
+<body>
+
+  <form id="studyForm">
+    <div>
+      <label for="studyTime">Enter study time in minutes:</label>
+      <input type="number" id="studyTime" name="studyTime" min="1" required/>
+    </div>
+    <div>
+      <label for="studyCycles">Enter number of study cycles:</label>
+      <input type="number" id="studyCycles" name="studyCycles" value="1" min="1" required/>
+    </div>
+    <div>
+      <label for="restTime">Enter restTime:</label>
+      <input type="number" id="restTime" name="restTime" min="1" required>
+    </div>
+    <button type="submit">Start Studying</button>
+  </form>
+  
+  <div id="clock" class="blob">
+    <div class="timer" id="timerDisplay">00:00</div>
+  </div>
+  
+  <script src="pomodoro.js"></script>
+  
+</body>
+</html>
