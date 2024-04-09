@@ -12,7 +12,7 @@ studyCyclesEl.addEventListener('change', function(event){
   if(!restEl && studyCyclesEl.value > 1){
     studyCyclesEl.parentNode.insertAdjacentHTML('afterend',`
       <div>
-        <label for="restTime">Enter restTime:</label>
+        <label for="restTime">Enter restTime: </label>
         <input type="number" id="restTime" name="restTime" min="1" required>
       </div>
     `);
