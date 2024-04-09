@@ -30,6 +30,7 @@ body {
   font-size: 2em;
   z-index: 1;
   color: black;
+  text-align: center;
 }
 
 .blob {
@@ -96,6 +97,7 @@ body {
     border-radius: 52% 43% 36% 34% / 47% 29% 86% 45%;
   }
   80%{
+    border-radius: 22% 73% 41% 54% / 37% 49% 56% 65%;
   }
   100% {
     transform: scale(10);

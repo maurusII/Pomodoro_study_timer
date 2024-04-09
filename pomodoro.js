@@ -47,7 +47,7 @@ studyForm.addEventListener('submit', function(event) {
   const styleSheet = document.createElement("style");
   styleSheet.innerText = `
     .blob::before, .blob::after {
-      animation: blobbing-up ${animationDuration}s linear forwards;
+      animation: blobbing-up ${animationDuration}s ease forwards;
       animation-delay: ${delta}s;
     }
   `;
@@ -75,7 +75,7 @@ studyForm.addEventListener('submit', function(event) {
 
       styleSheet.innerText = `
         .blob::before, .blob::after {
-          animation: blobbing-up ${passedCycles < cycles ? (restTime * 60) : 1}s linear reverse forwards;
+          animation: blobbing-up ${passedCycles < cycles ? (restTime * 60) : 1}s ease reverse forwards;
           animation-delay: ${((passedCycles-1)*cycleTime/1000) + studyTime*60 + delta}s;
         }
       `;
@@ -111,7 +111,7 @@ studyForm.addEventListener('submit', function(event) {
       
       styleSheet.innerText = `
         .blob::before, .blob::after {
-          animation: blobbing-up ${animationDuration}s linear forwards;
+          animation: blobbing-up ${animationDuration}s ease forwards;
           animation-delay: ${passedCycles*cycleTime/1000 + delta}s;
         }
       `;
