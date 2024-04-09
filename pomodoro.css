@@ -8,8 +8,12 @@ body {
   z-index: 2;
   overflow: hidden;
 }
+
 #studyForm {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 10; /* Ensure the form appears above the blob */
 }
 
@@ -82,3 +86,10 @@ body {
   }
 }
 
+@keyframes blobbing-up{
+
+}
+
+@keyframes filling-blob{
+
+}
