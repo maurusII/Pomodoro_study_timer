@@ -83,7 +83,17 @@ body {
 }
 
 @keyframes blobbing-up{
+  33% {
+    transform: scale(calc(10/3));
+    
+  }
+  66%{
 
+  }
+  100% {
+    transform: scale(10);
+
+  }
 }
 
 @keyframes filling-blob{
