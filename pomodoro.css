@@ -83,16 +83,24 @@ body {
 }
 
 @keyframes blobbing-up{
-  33% {
-    transform: scale(calc(10/3));
+  15% {
     
   }
-  66%{
+  20% {
+    border-radius: 27% 63% 56% 44% / 22% 69% 37% 69%;
+  }
+  40% {
+
+  }
+  60%{
+
+  }
+  80%{
 
   }
   100% {
     transform: scale(10);
-
+    border-radius: 0;
   }
 }
 
